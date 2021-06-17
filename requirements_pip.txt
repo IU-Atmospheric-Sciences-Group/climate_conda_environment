@@ -1,0 +1,5 @@
+f90nml
+fastkde
+plotly
+plotly-express
+pytest
