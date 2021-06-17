@@ -11,7 +11,7 @@ ENVIRONMENT_NAME=climate_py${PYTHON_VERSION/./}
 conda env list > $HOME/.my_conda_envs
 
 #if the current environment name is not in your environments, install it
-if [["$(cat $HOME/.my_conda_envs)" != *"${ENVIRONMENT_NAME} "* ]]; then
+if [[ "$(cat $HOME/.my_conda_envs)" != *"${ENVIRONMENT_NAME} "* ]]; then
 
   conda create -y --quiet -c conda-forge -n ${ENVIRONMENT_NAME} python=${PYTHON_VERSION}
 
@@ -24,10 +24,8 @@ if [["$(cat $HOME/.my_conda_envs)" != *"${ENVIRONMENT_NAME} "* ]]; then
   conda install -c conda-forge mamba --quiet --yes
 
   # install conda packages (channels managed in YAML file)
-  mamba install --yes --file requirements.yml
-
-  # install pip packages
-  pip install -r requirements_pip.txt
+  # pip dependencies also managed in YAML file
+  mamba env udpate -f requirements.yml
 
   # activate the jupyter kernel
   ipython kernel install --name "${ENVIRONMENT_NAME}" --user
@@ -37,7 +35,9 @@ else
 
   source activate $ENVIRONMENT_NAME
   
-  mamba env update -n ${ENVIRONMENT_NAME} python=${PYTHON_VERSION} --file requirements.yml
+  mamba env update -f requirements.yml
+
+fi
 
 #remove temp file
 rm $HOME/.my_conda_envs
