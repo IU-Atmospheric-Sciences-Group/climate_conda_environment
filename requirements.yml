@@ -2,7 +2,7 @@ channels:
  - conda-forge
  - plotly
 dependencies:
- - autopep8 
+ - autopep8 #autoformat code to PEP8
  - cartopy #plotting geospatial data
  - cfgrib #handling GRIB files with xarray
  - cftime #handling non-standard calendars
@@ -11,56 +11,56 @@ dependencies:
  - cython #Python - C interface
  - dask #distributed (larger than memory) dataset handling
  - dask-labextension #dask dashboard extension for Jupyter
- - descartes
- - emcee
- - f90nml
+ - descartes #add geometric patch support to matplotlib
+ - emcee #MCMC (Markov chain Monte Carlo) sampler
+ - f90nml #Fortran90 namelist builder
  - ffmpeg #multimedia file handling
- - fiona
+ - fiona #GDAL rasterized and vectorized geospatial data handling
  - geopandas #geospatial data analysis
  - gitpython #python git interface
- - imageio
+ - imageio #read and write images
  - ipympl #interactive matplotlib widgets in Jupyter
  - ipywidgets #interactive widgets in Jupyter
  - jupyterlab #Jupyter
- - jupyterlab_execute_time
- - jupyterlab-git
- - jupyter-resource-usage
+ - jupyterlab_execute_time #Jupyter cell timings
+ - jupyterlab-git #git version control for Jupyter
+ - jupyter-resource-usage #Jupyter memory usage tracker
  - jupyterlab_vim #vim-style editor for Jupyter
  - keras #deep learning
  - matplotlib #low-level plotting interface
  - metpy #plotting (esp. skew-Ts) and analysis of meteorlogical data
- - mpi4py
+ - mpi4py #python bindings for MPI
  - nc-time-axis #nice plotting of cftime objs for xarray plots
  - netcdf4 #low-level handling of netCDF files
  - nodejs #for installing extensions in Jupyter
  - numba #speed ups for numpy
  - numpy #low-level, fast array handling
- - openh264
+ - openh264 #H.264 codec support
  - pandas #time-series analysis
  - pip #python package manager
  # plotly versions greater than 4 included plotly_express
  - plotly=4 #high-level plotting interface
- - pyshp
+ - pyshp #shapefile handling
  - pytest #python package tester
- - pywavelets
+ - pywavelets #wavelet transforms
  - qtpy #Qt graphics interace
  - regionmask #filtering and plotting to IPCC AR6 regions
- - schwimmbad
- - scikit-image
+ - schwimmbad #easy code scaling from serial to parallel
+ - scikit-image #image processing
  - scikit-learn #machine learning
  - scipy #interpolation, statistics, linear algebra, signal processing, special funcs
  - seaborn #high-level plotting
- - setuptools
+ - setuptools #python package development
  - shapely #low-level shape handling
  - statsmodels #higher-level statistical tests
  - sympy #symbolic math (think mathematica)
- - tk
+ - tk #tensorkit, deep learning
  - tqdm #fancy progress bars for command line
- - widgetsnbextension
+ - widgetsnbextension #with ipywidgets, for Jupyter widgets
  - windspharm #Helmholtz decomposition for wind field, wind vector math (vorticity, div)
  - wrf-python #processing WRF output
- - x264
+ - x264 #video codec
  - xarray #high-level gridded data handling/analysis/processing, supports NETCDF/GRIB and more
- - xlsxwriter
+ - xlsxwriter #writing Excel files
  - pip: #pip dependencies
-   - fastkde
+   - fastkde #fast Kernel Density Estimation
