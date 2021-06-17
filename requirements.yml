@@ -1,0 +1,64 @@
+channels:
+ - conda-forge
+ - plotly
+dependencies:
+ - autopep8 
+ - cartopy #plotting geospatial data
+ - cfgrib #handling GRIB files with xarray
+ - cftime #handling non-standard calendars
+ - cloudpickle #extended support for serializing for Python objects
+ - cmocean #more perceptually-uniform colorbars
+ - cython #Python - C interface
+ - dask #distributed (larger than memory) dataset handling
+ - dask-labextension #dask dashboard extension for Jupyter
+ - descartes
+ - emcee
+ - f90nml
+ - ffmpeg #multimedia file handling
+ - fiona
+ - geopandas #geospatial data analysis
+ - gitpython #python git interface
+ - imageio
+ - ipympl #interactive matplotlib widgets in Jupyter
+ - ipywidgets #interactive widgets in Jupyter
+ - jupyterlab #Jupyter
+ - jupyterlab_execute_time
+ - jupyterlab-git
+ - jupyter-resource-usage
+ - jupyterlab_vim #vim-style editor for Jupyter
+ - keras #deep learning
+ - matplotlib #low-level plotting interface
+ - metpy #plotting (esp. skew-Ts) and analysis of meteorlogical data
+ - mpi4py
+ - nc-time-axis #nice plotting of cftime objs for xarray plots
+ - netcdf4 #low-level handling of netCDF files
+ - nodejs #for installing extensions in Jupyter
+ - numba #speed ups for numpy
+ - numpy #low-level, fast array handling
+ - openh264
+ - pandas #time-series analysis
+ - pip #python package manager
+ # plotly versions greater than 4 included plotly_express
+ - plotly=4 #high-level plotting interface
+ - pyshp
+ - pytest #python package tester
+ - pywavelets
+ - qtpy #Qt graphics interace
+ - regionmask #filtering and plotting to IPCC AR6 regions
+ - schwimmbad
+ - scikit-image
+ - scikit-learn #machine learning
+ - scipy #interpolation, statistics, linear algebra, signal processing, special funcs
+ - seaborn #high-level plotting
+ - setuptools
+ - shapely #low-level shape handling
+ - statsmodels #higher-level statistical tests
+ - sympy #symbolic math (think mathematica)
+ - tk
+ - tqdm #fancy progress bars for command line
+ - widgetsnbextension
+ - windspharm #Helmholtz decomposition for wind field, wind vector math (vorticity, div)
+ - wrf-python #processing WRF output
+ - x264
+ - xarray #high-level gridded data handling/analysis/processing, supports NETCDF/GRIB and more
+ - xlsxwriter
