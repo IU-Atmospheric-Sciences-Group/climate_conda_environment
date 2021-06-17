@@ -62,3 +62,5 @@ dependencies:
  - x264
  - xarray #high-level gridded data handling/analysis/processing, supports NETCDF/GRIB and more
  - xlsxwriter
+ - pip: #pip dependencies
+   - fastkde
