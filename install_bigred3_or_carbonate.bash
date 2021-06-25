@@ -17,9 +17,6 @@ if [[ "$(cat $HOME/.my_conda_envs)" != *"${ENVIRONMENT_NAME} "* ]]; then
 
   source activate $ENVIRONMENT_NAME
 
-  # install mpi4py
-  #MPICC="mpicc -shared" pip install --no-binary=mpi4py mpi4py
-
   # install mamba
   conda install -c conda-forge mamba --quiet --yes
 
