@@ -61,6 +61,7 @@ dependencies:
  - wrf-python #processing WRF output
  - x264 #video codec
  - xarray #high-level gridded data handling/analysis/processing, supports NETCDF/GRIB and more
+ - xesmf #utilities for regridding
  - xlsxwriter #writing Excel files
  - pip: #pip dependencies
    - fastkde #fast Kernel Density Estimation
