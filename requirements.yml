@@ -18,6 +18,7 @@ dependencies:
  - fiona #GDAL rasterized and vectorized geospatial data handling
  - geopandas #geospatial data analysis
  - gitpython #python git interface
+ - h5netcdf #use the h5netcdf engine in xarray (compression, speed)
  - imageio #read and write images
  - ipympl #interactive matplotlib widgets in Jupyter
  - ipywidgets #interactive widgets in Jupyter
