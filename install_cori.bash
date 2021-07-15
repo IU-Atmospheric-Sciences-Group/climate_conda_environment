@@ -16,9 +16,6 @@ if [[ "$(cat $HOME/.my_conda_envs)" != *"${ENVIRONMENT_NAME} "* ]]; then
 
   conda activate $ENVIRONMENT_NAME
 
-  # compile mpi4py using NERSC wrappers
-  module swap PrgEnv-${PE_ENV,,} PrgEnv-gnu
-  MPICC="cc -shared" pip install --no-binary=mpi4py mpi4py
 
   # install mamba
   conda install -c conda-forge mamba --quiet --yes
@@ -26,6 +23,10 @@ if [[ "$(cat $HOME/.my_conda_envs)" != *"${ENVIRONMENT_NAME} "* ]]; then
   # install conda packages (channels managed in YAML file)
   # pip dependencies also managed in YAML file
   mamba env udpate -f requirements.yml
+
+  # compile mpi4py using NERSC wrappers
+  module swap PrgEnv-${PE_ENV,,} PrgEnv-gnu
+  MPICC="cc -shared" pip install --force --no-binary=mpi4py mpi4py
 
   # activate the jupyter kernel
   ipython kernel install --name "${ENVIRONMENT_NAME}" --user
