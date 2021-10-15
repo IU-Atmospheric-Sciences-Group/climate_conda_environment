@@ -41,6 +41,9 @@ dependencies:
  - pip #python package manager
  # plotly versions greater than 4 included plotly_express
  - plotly=4 #high-level plotting interface
+ - progress #progress bars
+ - pynio #NCL-based IO
+ - pyngl #NCL-based graphics
  - pyshp #shapefile handling
  - pytest #python package tester
  - pywavelets #wavelet transforms
