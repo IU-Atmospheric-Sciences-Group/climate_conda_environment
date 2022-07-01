@@ -3,7 +3,7 @@
 set -e
 set -x
 
-PYTHON_VERSION=3.8
+PYTHON_VERSION=3.9
 ENVIRONMENT_NAME=climate_py${PYTHON_VERSION/./}
 
 module load python
@@ -16,7 +16,7 @@ if [[ "$(cat $HOME/.my_conda_envs)" != *"${ENVIRONMENT_NAME} "* ]]; then
 
   conda create -y --quiet -c conda-forge -n ${ENVIRONMENT_NAME} python=${PYTHON_VERSION}
 
-  source activate $ENVIRONMENT_NAME
+  conda activate $ENVIRONMENT_NAME
 
 
   # install mamba

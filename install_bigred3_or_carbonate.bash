@@ -4,7 +4,7 @@ module load anaconda
 set -e
 set -x
 
-PYTHON_VERSION=3.8
+PYTHON_VERSION=3.9
 ENVIRONMENT_NAME=climate_py${PYTHON_VERSION/./}
 
 #save list of conda envs as temp file
@@ -22,7 +22,7 @@ if [[ "$(cat $HOME/.my_conda_envs)" != *"${ENVIRONMENT_NAME} "* ]]; then
 
   # install conda packages (channels managed in YAML file)
   # pip dependencies also managed in YAML file
-  mamba env udpate -f requirements.yml
+  mamba env update -f requirements.yml
 
   # activate the jupyter kernel
   ipython kernel install --name "${ENVIRONMENT_NAME}" --user

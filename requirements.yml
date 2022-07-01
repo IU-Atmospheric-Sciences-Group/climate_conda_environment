@@ -9,6 +9,7 @@ dependencies:
  - cloudpickle #extended support for serializing for Python objects
  - cmocean #more perceptually-uniform colorbars
  - cython #Python - C interface
+ - cupy # GPU-based computation with numpy
  - dask #distributed (larger than memory) dataset handling
  - dask-labextension #dask dashboard extension for Jupyter
  - descartes #add geometric patch support to matplotlib
@@ -69,3 +70,4 @@ dependencies:
  - xlsxwriter #writing Excel files
  - pip: #pip dependencies
    - fastkde #fast Kernel Density Estimation
+   - gitsummary # makes it simple to print git repo info in a notebook or script
